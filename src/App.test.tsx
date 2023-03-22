@@ -6,6 +6,6 @@ import '@testing-library/jest-dom'
 
 test('button should be rendered', () => {
   render(<ChangeIcon />);
-  const buttonElement = screen.getByRole("btn");
+  const buttonElement = screen.getByRole("button");
   expect(buttonElement).toBeInTheDocument();
 });
