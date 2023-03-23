@@ -14,5 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: docker build . -t abel254/icon-change-simple-app 
-    - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password stdin
+    - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
     - run: docker push abel254/icon-change-simple-app
