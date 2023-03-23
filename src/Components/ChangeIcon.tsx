@@ -16,6 +16,7 @@ export const ChangeIcon = () => {
 
   return(
     <div className="icons-container">
+      {/* title */}
       <h1>Switch Between <span>Apple</span> or <span>G</span><span>o</span><span>og</span><span>le</span></h1>
       { <div className="image">
         {icon === 'apple' ?<ConfigIcon><GrApple/></ConfigIcon> : <ConfigIcon><FcGoogle/></ConfigIcon>}
